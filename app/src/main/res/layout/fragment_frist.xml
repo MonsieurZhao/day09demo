@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#d43c3c"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="首页"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:id="@+id/tv_title_frist"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tv_scan_frist"
+            android:text="扫一扫"
+            android:layout_marginRight="10dp"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/vp_banner_frist"
+            ></android.support.v4.view.ViewPager>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/ll_layout_frist"
+            android:gravity="center">
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:id="@+id/ed_insert_frist"
+            android:paddingLeft="10dp"
+            android:background="@drawable/corner"
+            android:layout_marginRight="10dp"
+            android:hint="请输入"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="生成"
+            android:id="@+id/bt_create_frist"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/corner2"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/iv_img_frist"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_launcher"/>
+
+</LinearLayout>
